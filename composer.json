@@ -1,0 +1,20 @@
+{
+    "name": "hyphper/h2-hpack",
+    "description": "HTTP/2 Header Encoding",
+    "autoload": {
+        "psr-4": {
+            "Hyphper\\": "src/",
+            "Hyphper\\Test\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Davey Shafik",
+            "email": "me@daveyshafik.com"
+        }
+    ]
+}
