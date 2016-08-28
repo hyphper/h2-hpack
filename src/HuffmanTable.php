@@ -3,7 +3,6 @@ namespace Hyphper\Hpack;
 
 class HuffmanTable
 {
-
     const HUFFMAN_TABLE = [
         # Node 0 (Root Node, never emits symbols.)
         [4, 0, 0],

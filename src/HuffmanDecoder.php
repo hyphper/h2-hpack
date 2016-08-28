@@ -88,9 +88,9 @@ class HuffmanDecoder
      *
      * @param string $huffman_string
      */
-    static function decodeHuffman(string $huffman_string)
+    public static function decodeHuffman(string $huffman_string)
     {
-        if (empty ($huffman_string)) {
+        if (empty($huffman_string)) {
             return '';
         }
 
@@ -104,8 +104,9 @@ class HuffmanDecoder
         // need to handle each nibble twice. We unroll that: it makes the loop body
         // a bit longer, but that's ok
 
-        for ($i = 1; $i <= sizeof($huffman_string); ++$i) {
-            $input_byte = $huffman_string[$i]; // decbin($huffman_string[$i]);
+        $huffman_string_size =  sizeof($huffman_string);
+        for ($i = 1; $i <= $huffman_string_size; ++$i) {
+            $input_byte = $huffman_string[$i];
             $index = ($state * 16) + ($input_byte >> 4);
             list($state, $flags, $output_byte) = HuffmanTable::HUFFMAN_TABLE[$index];
 

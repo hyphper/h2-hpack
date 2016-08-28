@@ -8,5 +8,4 @@ namespace Hyphper\Hpack\Exception;
  */
 class InvalidTableIndexException extends HpackDecodingException
 {
-
 }
