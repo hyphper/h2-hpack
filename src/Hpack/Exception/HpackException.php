@@ -6,6 +6,6 @@ namespace Hyphper\Hpack\Exception;
  *
  * @package Hyphper\Hpack\Exception
  */
-class HPACKException extends \Exception
+class HpackException extends \Exception
 {
 }
