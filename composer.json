@@ -10,13 +10,28 @@
     "require-dev": {
         "phpunit/phpunit": "^5.5",
         "friendsofphp/php-cs-fixer": "^1.12",
-        "squizlabs/php_codesniffer": "^2.6"
+        "squizlabs/php_codesniffer": "^2.6",
+        "http2jp/hpack-test-case": "1.0"
     },
     "license": "MIT",
     "authors": [
         {
             "name": "Davey Shafik",
             "email": "me@daveyshafik.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "http2jp/hpack-test-case",
+                "version": "1.0",
+                "source": {
+                    "url": "https://github.com/http2jp/hpack-test-case",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
         }
     ]
 }

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "471a428ee001ccfac20f3759b643cfde",
-    "content-hash": "b1721648e8304a98a1971c191b2035ce",
+    "hash": "29fc27c85503c7df6b510476d31ff53a",
+    "content-hash": "19ac18bcf9c68c95584eef560e73ace0",
     "packages": [],
     "packages-dev": [
         {
@@ -119,6 +119,16 @@
             ],
             "description": "A tool to automatically fix PHP code style",
             "time": "2016-08-17 00:17:27"
+        },
+        {
+            "name": "http2jp/hpack-test-case",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/http2jp/hpack-test-case",
+                "reference": "origin/master"
+            },
+            "type": "library"
         },
         {
             "name": "myclabs/deep-copy",
