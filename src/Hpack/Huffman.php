@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 namespace Hyphper\Hpack;
 
 use Hyphper\Hpack\Exception\HpackDecodingException;
