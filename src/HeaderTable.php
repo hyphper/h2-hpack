@@ -92,6 +92,9 @@ class HeaderTable
     protected $resized = false;
     protected $dynamicEntries;
 
+    /**
+     * HeaderTable constructor.
+     */
     public function __construct()
     {
         $this->dynamicEntries = new \SplQueue();
@@ -207,11 +210,17 @@ class HeaderTable
         $this->currentSize = $current_size;
     }
 
+    /**
+     * @return int
+     */
     public function getMaxSize()
     {
         return $this->maxSize;
     }
 
+    /**
+     * @param int $new_max
+     */
     public function setMaxSize(int $new_max)
     {
         $old_max       = $this->maxSize;
@@ -270,7 +279,7 @@ class HeaderTable
                     return [$index + 1, new Header($name, $value)];
                 }
 
-                if ($partial == null) {
+                if ($partial === null) {
                     $partial = [$index + 1, new Header($name, null)];
                 }
             }
@@ -282,7 +291,7 @@ class HeaderTable
                     return [$index + $offset + 1, new Header($name, $value)];
                 }
 
-                if ($partial == null) {
+                if ($partial === null) {
                     $partial = [$index + $offset + 1, new Header($name, null)];
                 }
             }
