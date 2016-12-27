@@ -124,5 +124,4 @@ class IntegerTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($input[0], $decoded[0]);
         $this->assertNotEquals(0, $decoded[1]);
     }
-
 }
