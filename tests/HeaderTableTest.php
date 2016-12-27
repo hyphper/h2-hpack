@@ -23,7 +23,6 @@ class HeaderTableTest extends \PHPUnit_Framework_TestCase
     }
     public function testGetByIndexStaticTable()
     {
-
         $table    = new \Hyphper\HeaderTable();
         $expected = new \Hyphper\Header(':authority', '');
 
