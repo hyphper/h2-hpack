@@ -40,6 +40,10 @@
     ],
     "scripts": {
         "test": "phpunit",
-        "fix-cs": "./tools/fix-cs.sh"
+        "fix-cs": [
+            "phpcbf --standard=PSR1,PSR2 ./src ./tests",
+            "php-cs-fixer fix --level=psr2 ./src",
+            "php-cs-fixer fix --level=psr2 ./tests"
+        ]
     }
 }
